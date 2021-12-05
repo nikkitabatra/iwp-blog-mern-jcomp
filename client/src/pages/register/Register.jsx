@@ -45,6 +45,7 @@ export default function Register() {
         <input
           type="password"
           className="registerInput"
+          pattern = "/^.{8,}$/"
           placeholder="Enter your password..."
           onChange={(e) => setPassword(e.target.value)}
         />
